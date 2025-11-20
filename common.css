@@ -7,3 +7,60 @@ body.de-mobile {
   color: #eee;
   margin: 0;
 }
+/* Skryjeme původní desktop obsah na homepage */
+body.de-mobile.de-mobile-home #de-desktop-root {
+  display: none;
+}
+
+/* Kořen mobilní homepage */
+#de-mobile-home-root {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 12px 8px 24px;
+}
+
+/* Nadpis sekcí */
+#de-mobile-home-root h2 {
+  font-size: 18px;
+  margin: 16px 0 8px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Hlavní tlačítka (Vstoupit, Registrace…) */
+#de-mobile-home-actions {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.de-mobile-main-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 999px;
+  background: #333;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  border: 1px solid #555;
+}
+
+.de-mobile-main-btn:first-child {
+  background: #6b8c2f;
+  border-color: #8fb341;
+}
+
+/* Redaktorský sloupek + fóra – zmenšíme text, necháme dřevěné pozadí z originálu */
+#de-mobile-home-redakce,
+#de-mobile-home-fora {
+  font-size: 13px;
+}
+
+/* Ať se v nich nic nerozpadne na 100% šířku */
+#de-mobile-home-redakce table,
+#de-mobile-home-fora table {
+  width: 100% !important;
+}
+
