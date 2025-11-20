@@ -86,7 +86,10 @@
     return btn;
   }
 
-  var btnVstoupit = cloneButton('a[href*="login.asp"]', "Vstoupit");
+  var btnVstoupit = document.createElement("a");
+btnVstoupit.href = "https://www.darkelf.cz/ligy.asp";
+btnVstoupit.textContent = "Vstoupit";
+btnVstoupit.className = "de-mobile-main-btn";
   var btnRegistrace = cloneButton('a[href*="registrace"],a[href*="reg.asp"]', "Registrace");
   var btnPribeh = cloneButton('a[href*="story"],a[href*="pribeh"]', "Úvodní příběh");
   var btnMapa = cloneButton('a[href*="world"],a[href*="mapa"]', "Mapa světa");
