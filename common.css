@@ -1,93 +1,11 @@
-/* DE Mobile common styles */
-/* Základ – jen font a velikost, vizuál (pozadí, dřevo) necháme z originálu */
+/* DE Mobile – základní font, nic víc */
 body.de-mobile {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 14px;
   line-height: 1.4;
 }
 
-/* Hlavní tlačítka na homepage – styl podobný původním DE */
-.de-mobile-main-btn {
-  display: block;
-  max-width: 260px;
-  margin: 6px auto;
-  padding: 8px 16px;
-  text-align: center;
-  background: #2b1a0a;
-  border: 1px solid #70451f;
-  border-radius: 6px;
-  color: #f0e3c0 !important;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-}
-
-/* První tlačítko (Vstoupit) může být trochu „výraznější“ */
-#de-mobile-home-actions .de-mobile-main-btn:first-child {
-  background: #4c651f;
-  border-color: #8fb341;
-}
-
-/* Ať se homepage trochu líp dýchá na mobilu */
+/* Homepage může mít trochu menší vnitřní okraj na mobilu */
 body.de-mobile.de-mobile-home {
-  padding: 8px 4px 16px;
+  padding: 4px;
 }
-
-/* Skryjeme původní desktop obsah na homepage */
-body.de-mobile.de-mobile-home #de-desktop-root {
-  display: none;
-}
-
-/* Kořen mobilní homepage */
-#de-mobile-home-root {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 12px 8px 24px;
-}
-
-/* Nadpis sekcí */
-#de-mobile-home-root h2 {
-  font-size: 18px;
-  margin: 16px 0 8px;
-  font-weight: 600;
-  text-align: left;
-}
-
-/* Hlavní tlačítka (Vstoupit, Registrace…) */
-#de-mobile-home-actions {
-  margin-top: 8px;
-  margin-bottom: 16px;
-}
-
-.de-mobile-main-btn {
-  display: block;
-  text-align: center;
-  padding: 10px 14px;
-  margin-bottom: 8px;
-  border-radius: 999px;
-  background: #333;
-  color: #fff !important;
-  text-decoration: none;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  border: 1px solid #555;
-}
-
-.de-mobile-main-btn:first-child {
-  background: #6b8c2f;
-  border-color: #8fb341;
-}
-
-/* Redaktorský sloupek + fóra – zmenšíme text, necháme dřevěné pozadí z originálu */
-#de-mobile-home-redakce,
-#de-mobile-home-fora {
-  font-size: 13px;
-}
-
-/* Ať se v nich nic nerozpadne na 100% šířku */
-#de-mobile-home-redakce table,
-#de-mobile-home-fora table {
-  width: 100% !important;
-}
-
